@@ -1,0 +1,25 @@
+<?php
+
+class iphone_4 extends device {
+  
+  private $width;
+  private $height;
+  
+  private $screenshot;
+  private $name;
+  
+  private $description;
+  
+  function __construct () {
+    
+    $this->width = 320;
+    $this->height = 480;
+    
+    $this->screenshot = '';
+    $this->name = 'Iphone 4';
+    
+    $this->description = 'Iphone 4';
+    
+  }
+  
+}
