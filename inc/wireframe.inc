@@ -67,4 +67,17 @@ class wireframe {
     return ob_get_clean();
   }
   
+  // render attributes
+  private function attributes ($attributes = array()) {
+    $output = '';
+    
+    foreach ($attributes as $key => $value) {
+      // debug – secure this a bit!
+      $output .= " $key=\"$value\"";
+      
+    }
+    
+    return $output;
+  }
+  
 }
